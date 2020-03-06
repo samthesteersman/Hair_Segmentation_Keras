@@ -9,7 +9,7 @@ from keras.utils import conv_utils
 from keras import backend as K
 from keras.backend import int_shape, permute_dimensions
 
-from utils import loss
+from . import loss
 
 def _resize_images(x, height_factor, width_factor, data_format):
     """Resizes the images contained in a 4D tensor.
